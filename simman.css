@@ -26,6 +26,18 @@
     padding: 1rem;
 }
 
+/* media queries for responsiveness */
+@media (max-width: 485px) {
+    .nav-bar ul {
+     display: flex;
+     justify-content: center;
+
+    }
+} 
+
+
+
+
 
 
 /***************** BODY ******************/
@@ -39,21 +51,53 @@ body {
 .first-paragraph {   /* welcome */
   margin: 6rem auto;
   font-size: 1.2rem;
-  max-width: 70%;
-  max-inline-size: fit-content;
+  width:  fit-content;
+  max-width: 90%;
   border: #dad7ec solid 0.125rem;
   border-radius: 1rem;
   padding: 2rem;
   background-color: #fffffff1;
+
+  box-sizing: border-box;
+  overflow-y: break-word;
+} 
+
+@media (max-width: 600px) {
+  .first-paragraph h1 {
+    font-size: 4rem;   /* shrink font */
+  }
 }
 
-.first-paragraph a {
+@media (max-width: 385px) {
+    .first-paragraph h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+.first-paragraph a { /* linkedin link */
     font-weight: bold;
     text-decoration: none;
     color: #1800ad;
 }
 
-h1 {
+.first-paragraph-box {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+box-sizing: border-box;
+word-wrap: break-word;
+max-width: 700px;
+margin: 0 auto;
+}
+
+
+
+
+h1 { /* welcome on first page */
     font-size: 5rem;
     text-align: center;
 }
@@ -70,7 +114,8 @@ h4 {
     font-weight: normal;
 }
 
-/* about me */ 
+/* about me page  */ 
+
 .intro-text-pic { /*the whole section */
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +185,7 @@ div { /* the lil star square */
 
 .current-faves img:hover {
     transform: scale(1.2);
+    transition-duration: 0.4s;
 }
 
 
@@ -214,14 +260,16 @@ video {
 
 
 /***************** FOOTER **************/
-.footer-container {
-    text-align: center;
-    border-top:#1800ad solid 1px;
-    font-weight:bold;
-    padding: 1rem;
-    margin-top:auto;
+.footer {
+ border-top:#1800ad solid 1px;
+font-weight:bold;
+display: flex;
+flex-direction: column;
+bottom: 0;
+width: 100%;
+text-align: center;
+ 
 }
-
 
 
 
