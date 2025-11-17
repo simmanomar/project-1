@@ -45,6 +45,9 @@ body {
     background-color: #FFF8F0;
     color: #1800ad;
     font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
                   
@@ -68,7 +71,7 @@ body {
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 390px) {
     .first-paragraph h1 {
         font-size: 3rem;
     }
@@ -261,15 +264,18 @@ video {
 
 /***************** FOOTER **************/
 .footer {
- border-top:#1800ad solid 1px;
-font-weight:bold;
+
+border-top:#1800ad solid 1px;
 display: flex;
-flex-direction: column;
-bottom: 0;
-width: 100%;
+justify-content: center;
+align-items: center;
+font-size: 14px;
+padding: 20px;
 text-align: center;
+margin-top: auto;
+
  
-}
+} 
 
 
 
