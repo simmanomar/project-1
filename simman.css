@@ -105,11 +105,11 @@ h1 { /* welcome on first page */
     text-align: center;
 }
 
-h2 {
+h2 { /* hi i'm simman */
     font-size: 4rem; 
 }
 
-h3 {
+h3 { /* who is she & quick facts */
     text-align: center;
 }
 
@@ -119,13 +119,17 @@ h4 {
 
 /* about me page  */ 
 
+.intro-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .intro-text-pic { /*the whole section */
     display: flex;
-    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     margin: 3rem auto;
-    max-inline-size: max-content;
     gap: 2rem;
     padding: 3rem;
     border: #dad7ec solid 2px ;
@@ -133,28 +137,58 @@ h4 {
     background-color: #fffffff1;
 }
 
-.hi-box { /* box that the pb is inside*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .intro-text-pic img { /*just the image*/
     width: 10rem;
     height: 10rem;
-    object-fit: cover;
     border-radius: 50%;
-    border: #1800ad solid 1rem;
+    border: #1800ad solid 0.75rem;
+    gap: 1rem;
 }
 
 
+@media (max-width: 850px) {
+    .intro-text-pic  {
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+    .intro-text-pic h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-text-pic {
+        transform: scale(0.75);
+        transform-origin: top center;
+    }
+    .intro-text-pic h2 {
+        font-size: 2rem;
+    }
+}
 
 .about-me-text { /* my name is -- */
     display: block;
     margin: 0 auto;
     padding: 1rem;
-    max-width: 45%;
+    max-width: 50%;
     font-size: 1.2rem;
+}
+
+.about-me-wrapper {
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .about-me-text {
+justify-content: center;  
+max-inline-size: 100%;
+  }
+  .about-me-text h3 {
+    text-align: center;
+  }
 }
 
 div { /* the lil star square */ 
@@ -177,17 +211,22 @@ div { /* the lil star square */
   content: "   ★  ";
 }
 
+.current-faves-wrapper {
+    display: flex;
+    justify-content: center;
+}
 
 .current-faves {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    max-inline-size: fit-content;
     margin: 0 auto;
+    justify-content: center;
+    padding: 3rem;
 }
    
 .current-faves img {
-    margin: 4rem auto;
+    display: block;
     width: 15rem;
     border-radius: 10px;
     
@@ -198,7 +237,22 @@ div { /* the lil star square */
     transition-duration: 0.4s;
 }
 
+@media (max-width: 1024px) {
+    .current-faves {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 1.5rem;
+    }
+}
 
+@media (max-width: 480px) {
+    .current-faves {
+        grid-template-columns: 1fr;
+    }
+    .current-faves img {
+        width: 10rem;
+    }
+}
 
 /* projects */
 
