@@ -7,9 +7,10 @@
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    gap: 6.5rem;
-    margin-block: 2.5rem;
-    margin-inline-end: 3.2rem;    
+    gap: 6rem;
+    margin-inline-end: 1.5rem;
+    margin-top: 2rem;
+    
 }
 
 .nav-bar a {
@@ -22,21 +23,20 @@
     color: #ffffff;
     background-color: #ed87dc ;
     border: #dad7ec solid 0.0625rem;
-    border-radius: 5rem;
+    border-radius: 4rem;
     padding: 1rem;
 }
 
-/* media queries for responsiveness */
-@media (max-width: 485px) {
+
+
+
+@media (max-width: 480px) { /* media query for responsive nav-bar */ 
     .nav-bar ul {
-     display: flex;
-     justify-content: center;
-
+        justify-content:center;
+        margin-inline-end: 1.5rem;
+        gap: 2rem;
     }
-} 
-
-
-
+}
 
 
 
@@ -133,6 +133,12 @@ h4 {
     background-color: #fffffff1;
 }
 
+.hi-box { /* box that the pb is inside*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .intro-text-pic img { /*just the image*/
     width: 10rem;
     height: 10rem;
@@ -140,6 +146,7 @@ h4 {
     border-radius: 50%;
     border: #1800ad solid 1rem;
 }
+
 
 
 .about-me-text { /* my name is -- */
