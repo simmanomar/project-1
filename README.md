@@ -1,5 +1,7 @@
 **Build your personal website - The fundamentals Part 1.**
 
+https://simmanomar.github.io/project-1/  
+
 **Goal:** Design and build a simple, personal website that introduces who you are. 
 You’ll structure content using HTML, style it with CSS, and prepare your site for viewing on different screen sizes. 
 
